@@ -440,7 +440,7 @@ export const tr = {
     headline:
       "Yazılımın, verinin ve altyapının kesiştiği noktada dijital ürünler ve akıllı sistemler geliştiriyorum.",
     subtitle:
-      "Senior full-stack devel ve AI sistemleri geliştiricisiyim. Fikirleri çalışan ürünlere, karmaşık altyapıları ise güvenilir deneyimlere dönüştürüyorum. Uzaktan çalışıyorum.",
+      "Senior full-stack yazılım geliştiricisi ve AI sistemleri geliştiricisiyim. Fikirleri çalışan ürünlere, karmaşık altyapıları ise güvenilir deneyimlere dönüştürüyorum. Uzaktan çalışıyorum.",
     ctaPrimary: "Projeleri İncele",
     ctaSecondary: "İletişime Geç",
     statusLabel: "İş birliklerine açığım",
