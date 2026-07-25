@@ -461,7 +461,7 @@ export const tr = {
       "Şu anda nmi.com'de uzaktan Full Stack JavaScript Developer olarak çalışıyor, aynı zamanda innodigi.net'i yönetiyorum. Kişisel GPU destekli AI laboratuvarımda çıkarım optimizasyonu, RAG pipeline'ları ve akıllı agent sistemleri üzerine çalışıyorum.",
     stats: {
       years: "Senior",
-      yearsDesc: "Full-Stack Mühendis",
+      yearsDesc: "Full-Stack Yazılım Geliştiricisi",
       fullstack: "Full-Stack",
       fullstackDesc: "Ürün Mühendisliği",
       aiLab: "GPU Destekli",
@@ -643,7 +643,7 @@ export const tr = {
         title: "Geliştirici Araçları",
         type: "Kişisel Laboratuvar",
         problem:
-          "Mühendislik ekipleri, yerel geliştirme ortamlarından otomatik test ve dağıtım pipeline'larına kadar, üretim sürecindeki sürtünmeyi azaltan araçlara ihtiyaç duyar.",
+          "Geliştrici ekipleri, yerel geliştirme ortamlarından otomatik test ve dağıtım pipeline'larına kadar, üretim sürecindeki sürtünmeyi azaltan araçlara ihtiyaç duyar.",
         solution:
           "Yerel AI destekli kodlama asistanları, otomatik mühendislik döngüleri, CI/CD pipeline tasarımları ve altyapı kodu iş akışları içeren geliştirici araçları geliştirdim.",
         technologies: "TypeScript · Docker · CI/CD · AI Destekli Geliştirme",
@@ -702,7 +702,7 @@ export const tr = {
     ],
   },
   principles: {
-    title: "Mühendislik İlkeleri",
+    title: "Geliştirici İlkeleri",
     items: [
       { text: "Doğrulanabilir sistemler inşa et", icon: "rocket" },
       { text: "Karmaşayı gözlemlenebilir yap", icon: "eye" },
@@ -718,7 +718,7 @@ export const tr = {
   contact: {
     title: "Bir Şeyler İnşa Edelim",
     subtitle:
-      "Derin teknik düşünce gerektiren full-stack ürünler, AI sistemleri ve mühendislik zorlukları üzerinde işbirliği yapıyorum. İhtiyacın olan biri teslim eden bir mühendisse, konuşalım.",
+      "Derin teknik düşünce gerektiren full-stack ürünler, AI sistemleri ve mühendislik zorlukları üzerinde işbirliği yapıyorum. İhtiyacın olan biri teslim eden bir geliştiriciyse, görüşelim.",
     linkedin: "LinkedIn",
     email: "İletişime Geç",
         emailPlaceholder: "akmanserkan65@gmail.com",
