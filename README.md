@@ -1,32 +1,56 @@
-# React + TypeScript + Vite
+# serkanakman.dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Serkan Akman's personal portfolio site. A single-page React application showcasing full-stack engineering and AI systems work, with support for 6 languages (EN, TR, DE, SR, FR, IT).
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19 + TypeScript + Vite 8 + Tailwind CSS 4
+- `framer-motion` for scroll/transition animations
+- `lucide-react` for icons
+- `vitest` + `@testing-library/react` for tests
+- Canvas-based animated star network background
+- No backend, no database
 
-## React Compiler
+## Commands
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```
+npm run dev         # dev server
+npm run build       # TypeScript check + Vite production build (output: dist/)
+npm run typecheck   # tsc --noEmit
+npm run test        # Vitest test suite (jsdom)
+npm run preview     # serve production build locally
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Content & i18n
+
+All visible text lives in `src/content/translations.ts` — six objects (`en`, `tr`, `de`, `sr`, `fr`, `it`) sharing a typed `TranslationContent` interface. Language state is managed via React Context in `src/context/LanguageContext.tsx`, persisted to `localStorage` key `portfolio-lang`, and reflected in the URL (e.g., `/#/tr`).
+
+To add or edit content, edit all language objects in the translations file. No hardcoded text in components.
+
+## Structure
+
+```
+src/
+  content/translations.ts       # all bilingual content
+  context/LanguageContext.tsx   # shared language state
+  components/
+    HeroSection.tsx
+    AboutSection.tsx
+    ExpertiseSection.tsx
+    AILabSection.tsx            # AI Systems section
+    WorkSection.tsx
+    ExperienceSection.tsx
+    PrinciplesSection.tsx
+    ContactSection.tsx
+    Header.tsx
+    Footer.tsx
+    BackgroundEffects.tsx       # Canvas star network
+    LanguageSwitcher.tsx
+  test/
+    setup.ts
+    language.test.tsx
+```
+
+## SEO
+
+Open Graph and Twitter card meta tags in `index.html`. Update URL/description before deployment.
