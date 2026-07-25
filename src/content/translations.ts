@@ -440,7 +440,7 @@ export const tr = {
     headline:
       "Yazılımın, verinin ve altyapının kesiştiği noktada dijital ürünler ve akıllı sistemler geliştiriyorum.",
     subtitle:
-      "Kıdemli full-stack mühendisi ve AI sistemleri geliştiricisiyim. Fikirleri çalışan ürünlere, karmaşık altyapıları ise güvenilir deneyimlere dönüştürüyorum. Uzaktan çalışıyorum.",
+      "Senior full-stack devel ve AI sistemleri geliştiricisiyim. Fikirleri çalışan ürünlere, karmaşık altyapıları ise güvenilir deneyimlere dönüştürüyorum. Uzaktan çalışıyorum.",
     ctaPrimary: "Projeleri İncele",
     ctaSecondary: "İletişime Geç",
     statusLabel: "İş birliklerine açığım",
@@ -454,7 +454,7 @@ export const tr = {
   about: {
     title: "Hakkımda",
     paragraph1:
-      "Web uygulamaları, geliştirici araçları ve AI sistemleri geliştiren kıdemli bir full-stack mühendisim. Yazılım yolculuğuma profesyonel çalışmalar ve freelance projelerle başladım; bugün odağım, uçtan uca ürün mühendisliği ve güvenilir AI sistemleri tasarlamak.",
+          "Web uygulamaları, geliştirici araçları ve AI sistemleri geliştiren senior bir full-stack yazılım geliştiricisiyim. Yazılım yolculuğuma profesyonel çalışmalar ve freelance projelerle başladım; bugün odağım, uçtan uca ürün mühendisliği ve güvenilir AI sistemleri tasarlamak.",
     paragraph2:
       "Ürünleri uçtan uca geliştiririm: veri modellerinden ve API tasarımından, kullanıcıların her gün etkileşim kurduğu arayüzlere kadar. TypeScript, React, Node.js, Laravel ve mobil platformlarla çalışıyor; bilgi erişimi, araç kullanımı ve akıllı iş akışları için yerel ve buluttan bağımsız AI çıkarım altyapıları tasarlıyorum.",
     paragraph3:
