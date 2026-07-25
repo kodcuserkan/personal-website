@@ -407,7 +407,7 @@ export const en = {
       "I collaborate on full-stack products, AI systems, and engineering challenges that require deep technical thinking. If you have a project that needs someone who ships, let's talk.",
     linkedin: "LinkedIn",
     email: "Get in Touch",
-    emailPlaceholder: "hello@serkanakman.dev",
+    emailPlaceholder: "akmanserkan65@gmail.com",
   },
   footer: {
     name: "Serkan Akman",
@@ -721,7 +721,7 @@ export const tr = {
       "Derin teknik düşünce gerektiren full-stack ürünler, AI sistemleri ve mühendislik zorlukları üzerinde işbirliği yapıyorum. İhtiyacın olan biri teslim eden bir mühendisse, konuşalım.",
     linkedin: "LinkedIn",
     email: "İletişime Geç",
-    emailPlaceholder: "hello@serkanakman.dev",
+        emailPlaceholder: "akmanserkan65@gmail.com",
   },
   footer: {
     name: "Serkan Akman",
@@ -1039,7 +1039,7 @@ export const de: TranslationContent = {
       "Ich arbeite an Full-Stack-Produkten, KI-Systemen und technischen Herausforderungen, die tiefes Denken erfordern. Wenn dein Projekt jemanden braucht, der liefert, lass uns sprechen.",
     linkedin: "LinkedIn",
     email: "Kontakt aufnehmen",
-    emailPlaceholder: "hello@serkanakman.dev",
+    emailPlaceholder: "akmanserkan65@gmail.com",
   },
   footer: {
     name: "Serkan Akman",
