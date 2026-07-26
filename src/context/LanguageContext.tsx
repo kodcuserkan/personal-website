@@ -9,7 +9,15 @@ const LANGUAGES: { code: Language; short: string }[] = [
   { code: 'sr', short: 'SR' },
   { code: 'fr', short: 'FR' },
   { code: 'it', short: 'IT' },
+  { code: 'ar', short: 'AR' },
+  { code: 'he', short: 'HE' },
 ];
+
+const RTL_LANGUAGES = new Set<Language>(['ar', 'he']);
+
+function isRtl(lang: Language): boolean {
+  return RTL_LANGUAGES.has(lang);
+}
 
 function detectBrowserLanguage(): Language {
   const browserLang = navigator.language.toLowerCase();
@@ -18,23 +26,26 @@ function detectBrowserLanguage(): Language {
   if (browserLang.startsWith('sr')) return 'sr';
   if (browserLang.startsWith('fr')) return 'fr';
   if (browserLang.startsWith('it')) return 'it';
+  if (browserLang.startsWith('ar')) return 'ar';
+  if (browserLang.startsWith('he')) return 'he';
   return 'en';
 }
 
+const LANG_PATTERN = '(en|tr|de|sr|fr|it|ar|he)';
+
 function readLangFromUrl(): Language | null {
   const path = window.location.pathname;
-  const match = path.match(/^\/(en|tr|de|sr|fr|it)(\/.*)?$/);
+  const match = path.match(new RegExp('^\\/' + LANG_PATTERN + '(\\/.*)?$'));
   if (match) return match[1] as Language;
-  // Also handle stacked codes like /fr/sr/de
-  const stacked = path.match(/^\/(en|tr|de|sr|fr|it)(?:\/(en|tr|de|sr|fr|it))+/);
+  // Also handle stacked codes
+  const stacked = path.match(new RegExp('^\\/' + LANG_PATTERN + '(?:\\/' + LANG_PATTERN + ')+'));
   if (stacked) return stacked[1] as Language;
   return null;
 }
 
 function writeLangToUrl(lang: Language) {
   const url = new URL(window.location.href);
-  // Strip ALL language code segments (with or without trailing slash)
-  const langPattern = /(\/(en|tr|de|sr|fr|it))+/g;
+  const langPattern = new RegExp('/(' + LANG_PATTERN + ')+', 'g');
   let rest = url.pathname.replace(langPattern, '').replace(/^\/+/, '').replace(/\/+$/, '');
   if (!rest) rest = '';
   if (lang === 'en') {
@@ -70,6 +81,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     localStorage.setItem('portfolio-lang', lang);
     document.documentElement.lang = lang;
+    document.documentElement.dir = isRtl(lang) ? 'rtl' : 'ltr';
     writeLangToUrl(lang);
   }, [lang]);
 
