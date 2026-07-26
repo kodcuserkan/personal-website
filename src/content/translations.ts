@@ -1288,9 +1288,9 @@ export const fr: TranslationContent = {
   hero: {
     ...en.hero,
     headline:
-      "Je conÃ§ois des produits numÃ©riques et des systÃ¨mes intelligents Ã  la rencontre du logiciel, des donnÃ©es et de l'infrastructure.",
+      "Je conçois des produits numériques et des systèmes intelligents à la rencontre du logiciel, des données et de l'infrastructure.",
     subtitle:
-      "IngÃ©nieur full-stack senior et concepteur de systÃ¨mes d'IA. Je transforme les idÃ©es en produits fonctionnels et les infrastructures complexes en expÃ©riences fiables. Je travaille Ã  distance.",
+      "Ingénieur full-stack senior et concepteur de systèmes d'IA. Je transforme les idées en produits fonctionnels et les infrastructures complexes en expériences fiables. Je travaille à distance.",
     ctaPrimary: "Voir les projets",
     ctaSecondary: "Échangeons",
     statusLabel: "Ouvert aux collaborations",
@@ -1309,7 +1309,7 @@ export const fr: TranslationContent = {
     paragraph2:
       "Je construis les produits de bout en bout : des modèles de données et des API jusqu'aux interfaces utilisées au quotidien. Je travaille avec TypeScript, React, Node.js, Laravel et les plateformes mobiles. Je conçois également des infrastructures d'inférence locales et indépendantes du cloud pour la recherche, l'appel d'outils et les workflows agentiques.",
     paragraph3:
-      "Je travaille actuellement Ã  distance comme Full Stack JavaScript Developer chez nmi.com et je suis le fondateur d'innodigi.net. Dans mon laboratoire d'IA personnel Ã©quipÃ© de GPU, j'expÃ©rimente l'optimisation de l'infÃ©rence, les pipelines RAG et les systÃ¨mes d'agents intelligents.",
+      "Je travaille actuellement à distance comme Full Stack JavaScript Developer chez nmi.com et je suis le fondateur d'innodigi.net. Dans mon laboratoire d'IA personnel équipé de GPU, j'expérimente l'optimisation de l'inférence, les pipelines RAG et les systèmes d'agents intelligents.",
     stats: {
       years: "Senior",
       yearsDesc: "Ingénieur full-stack",
@@ -1325,7 +1325,7 @@ export const fr: TranslationContent = {
     ...en.expertise,
     title: "Compétences",
     subtitle:
-      "De l'architecture produit Ã  l'infrastructure d'infÃ©rence — les systÃ¨mes que je construis et les problÃ¨mes que je rÃ©sous.",
+      "De l'architecture produit à l'infrastructure d'inférence — les systèmes que je construis et les problèmes que je résous.",
     cards: en.expertise.cards.map((c, i) => ({
       ...c,
       title: [
@@ -1337,7 +1337,7 @@ export const fr: TranslationContent = {
         "Infrastructure IA créative",
       ][i],
       description: [
-        "Des produits web complets, de la couche de donnÃ©es Ã  l'interface en production.",
+        "Des produits web complets, de la couche de données à l'interface en production.",
         "Une infrastructure d'inférence indépendante des modèles, l'appel d'outils et des workflows d'agents vérifiables.",
         "Des pipelines RAG, bases vectorielles, traitement documentaire, recherche web et réponses sourcées.",
         "Des outils développeur, l'orchestration Docker, le CI/CD et la gestion des ressources GPU.",
@@ -1373,7 +1373,7 @@ export const fr: TranslationContent = {
     ...en.work,
     title: "Projets sélectionnés",
     subtitle:
-      "Produits, systÃ¨mes et infrastructure — du concept Ã  la production.",
+      "Produits, systèmes et infrastructure — du concept à la production.",
     projects: en.work.projects.map((p, i) => ({
       ...p,
       title: [
@@ -1411,7 +1411,7 @@ export const fr: TranslationContent = {
         "Fondateur",
         "JavaScript Developer",
         "Frontend Developer",
-        "DÃ©veloppeur Ã  temps partiel",
+        "Développeur à temps partiel",
         "Développeur logiciel",
       ][i],
     })),
