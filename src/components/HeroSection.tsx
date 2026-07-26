@@ -56,14 +56,14 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="hidden lg:flex justify-center"
+            className="flex justify-center"
           >
             <div className="relative">
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-500/20 via-transparent to-indigo-500/20 blur-xl"></div>
               <img
                 src={heroImage}
                 alt="Serkan Akman"
-                className="relative rounded-2xl border border-white/10 w-[380px] h-[480px] object-cover shadow-2xl shadow-black/50"
+                className="relative rounded-2xl border border-white/10 w-[280px] h-[360px] lg:w-[380px] lg:h-[480px] object-cover shadow-2xl shadow-black/50"
               />
             </div>
           </motion.div>
