@@ -78,6 +78,10 @@ export interface TranslationContent {
     }[];
     viewDetails: string;
     closeDetails: string;
+    problemLabel: string;
+    solutionLabel: string;
+    techLabel: string;
+    resultLabel: string;
   };
   experience: {
     title: string;
@@ -343,6 +347,10 @@ export const en = {
     ],
     viewDetails: "View Details",
     closeDetails: "Close",
+    problemLabel: "Problem",
+    solutionLabel: "Solution",
+    techLabel: "Technologies",
+    resultLabel: "Result",
   },
   experience: {
     title: "Experience",
@@ -660,6 +668,10 @@ export const tr = {
     ],
     viewDetails: "Detayları Gör",
     closeDetails: "Kapat",
+    problemLabel: "Problem",
+    solutionLabel: "Çözüm",
+    techLabel: "Teknolojiler",
+    resultLabel: "Sonuç",
   },
   experience: {
     title: "Deneyim",
@@ -982,6 +994,10 @@ export const de: TranslationContent = {
     ],
     viewDetails: "Details ansehen",
     closeDetails: "Schließen",
+    problemLabel: "Problem",
+    solutionLabel: "Lösung",
+    techLabel: "Technologien",
+    resultLabel: "Ergebnis",
   },
   experience: {
     title: "Erfahrung",
@@ -1107,7 +1123,7 @@ export const sr: TranslationContent = {
     paragraph1:
       "Senior sam full-stack inÅ¾enjer koji razvija web aplikacije, alate za programere i AI sisteme. Kroz profesionalni softverski rad i freelance projekte poÄeo sam da razvijam web aplikacije i digitalne proizvode, a danas se bavim celokupnim razvojem proizvoda i dizajnom AI sistema.",
     paragraph2:
-      "Proizvode razvijam od poÄetka do kraja â€” od modela podataka i API dizajna do interfejsa sa kojima korisnici rade. Radim sa TypeScriptom, Reactom, Node.js-om, Laravelom i mobilnim platformama. TakoÄ‘e projektujem infrastrukturu za lokalnu, od provajdera nezavisnu AI inferenciju, pretragu znanja, pozivanje alata i agentske tokove.",
+      "Proizvode razvijam od poÄetka do kraja — od modela podataka i API dizajna do interfejsa sa kojima korisnici rade. Radim sa TypeScriptom, Reactom, Node.js-om, Laravelom i mobilnim platformama. TakoÄ‘e projektujem infrastrukturu za lokalnu, od provajdera nezavisnu AI inferenciju, pretragu znanja, pozivanje alata i agentske tokove.",
     paragraph3:
       "Trenutno radim na daljinu kao Full Stack JavaScript Developer u kompaniji nmi.com i osnivaÄ sam innodigi.net-a. U svojoj liÄnoj GPU laboratoriji za AI, gde istraÅ¾ujem optimizaciju inferencije, RAG tokove i inteligentne agentske sisteme.",
     stats: {
@@ -1196,6 +1212,10 @@ export const sr: TranslationContent = {
     })),
     viewDetails: "Pogledaj detalje",
     closeDetails: "Zatvori",
+    problemLabel: "Problem",
+    solutionLabel: "Rešenje",
+    techLabel: "Tehnologije",
+    resultLabel: "Rezultat",
   },
   experience: {
     ...en.experience,
@@ -1305,7 +1325,7 @@ export const fr: TranslationContent = {
     ...en.expertise,
     title: "Compétences",
     subtitle:
-      "De l'architecture produit Ã  l'infrastructure d'infÃ©rence â€” les systÃ¨mes que je construis et les problÃ¨mes que je rÃ©sous.",
+      "De l'architecture produit Ã  l'infrastructure d'infÃ©rence — les systÃ¨mes que je construis et les problÃ¨mes que je rÃ©sous.",
     cards: en.expertise.cards.map((c, i) => ({
       ...c,
       title: [
@@ -1353,7 +1373,7 @@ export const fr: TranslationContent = {
     ...en.work,
     title: "Projets sélectionnés",
     subtitle:
-      "Produits, systÃ¨mes et infrastructure â€” du concept Ã  la production.",
+      "Produits, systÃ¨mes et infrastructure — du concept Ã  la production.",
     projects: en.work.projects.map((p, i) => ({
       ...p,
       title: [
@@ -1375,6 +1395,10 @@ export const fr: TranslationContent = {
     })),
     viewDetails: "Voir les détails",
     closeDetails: "Fermer",
+    problemLabel: "Problème",
+    solutionLabel: "Solution",
+    techLabel: "Technologies",
+    resultLabel: "Résultat",
   },
   experience: {
     ...en.experience,
@@ -1554,6 +1578,10 @@ export const it: TranslationContent = {
     })),
     viewDetails: "Vedi dettagli",
     closeDetails: "Chiudi",
+    problemLabel: "Problema",
+    solutionLabel: "Soluzione",
+    techLabel: "Tecnologie",
+    resultLabel: "Risultato",
   },
   experience: {
     ...en.experience,
@@ -1747,7 +1775,7 @@ export const ar: TranslationContent = {
     ...en.work,
     title: "مشاريع مختارة",
     subtitle:
-      "منتجات وأنظمة وبنى تحتية â€” من الفكرة إلى الإنتاج.",
+      "منتجات وأنظمة وبنى تحتية — من الفكرة إلى الإنتاج.",
     projects: en.work.projects.map((p, i) => ({
       ...p,
       title: [
@@ -1793,6 +1821,10 @@ export const ar: TranslationContent = {
     })),
     viewDetails: "عرض التفاصيل",
     closeDetails: "إغلاق",
+    problemLabel: "المشكلة",
+    solutionLabel: "الحل",
+    techLabel: "التقنيات",
+    resultLabel: "النتيجة",
   },
   experience: {
     ...en.experience,
@@ -1868,23 +1900,23 @@ export const he: TranslationContent = {
     expertise: "יכולות",
     aiSystems: "מערכות AI",
     work: "פרויקטים",
-    experience: "× יסיון",
-    principles: "עקרו× ות",
+    experience: "ניסיון",
+    principles: "עקרונות",
     contact: "יצירת קשר",
   },
   hero: {
     ...en.hero,
     headline:
-      "א× י בו× ה מוצרים דיגיטליים ומערכות חכמות במפגש שבין תוכ× ה, × תו× ים ותשתיות.",
+      "אני בונה מוצרים דיגיטליים ומערכות חכמות במפגש שבין תוכנה, נתונים ותשתיות.",
     subtitle:
-      "מה× דס Full-Stack בכיר ובו× ה מערכות AI. א× י הופך רעיו× ות למוצרים עובדים ותשתיות מורכבות לחוויות אמי× ות. עובד מרחוק.",
+      "מהנדס Full-Stack בכיר ובונה מערכות AI. אני הופך רעיונות למוצרים עובדים ותשתיות מורכבות לחוויות אמינות. עובד מרחוק.",
     ctaPrimary: "לצפייה בפרויקטים",
-    ctaSecondary: "בואו × דבר",
+    ctaSecondary: "בואו נדבר",
     statusLabel: "זמין לשיתופי פעולה",
     infraCard: {
       client: "סביבת פיתוח",
       middleware: "שכבת API",
-      inference: "מ× וע הסקה",
+      inference: "מנוע הסקה",
       systems: "RAG Â· כלים Â· יישומים",
     },
   },
@@ -1892,44 +1924,44 @@ export const he: TranslationContent = {
     ...en.about,
     title: "אודות",
     paragraph1:
-      "א× י מה× דס Full-Stack בכיר שבו× ה יישומי ווב, כלי פיתוח ומערכות AI. התחלתי לב× ות יישומים ומוצרים דיגיטליים במסגרת עבודה מקצועית ופרויקטים עצמאיים, ובהמשך התמחיתי בה× דסת מוצרים מקצה לקצה ובתכ× ון מערכות AI.",
+      "אני מהנדס Full-Stack בכיר שבונה יישומי ווב, כלי פיתוח ומערכות AI. התחלתי לבנות יישומים ומוצרים דיגיטליים במסגרת עבודה מקצועית ופרויקטים עצמאיים, ובהמשך התמחיתי בהנדסת מוצרים מקצה לקצה ובתכנון מערכות AI.",
     paragraph2:
-      "א× י בו× ה מוצרים מקצה לקצה â€” ממודלי × תו× ים ותכ× ון API ועד לממשקים שא× שים משתמשים בהם מדי יום. א× י עובד עם TypeScript, React, Node.js, Laravel ופלטפורמות מובייל. ב× וסף א× י מתכ× ן ומפעיל תשתיות הסקה מקומיות ובלתי תלויות בע× ן עבור אחזור מידע, קריאות לכלים ותהליכי עבודה של סוכ× ים.",
+      "אני בונה מוצרים מקצה לקצה — ממודלי נתונים ותכנון API ועד לממשקים שאנשים משתמשים בהם מדי יום. אני עובד עם TypeScript, React, Node.js, Laravel ופלטפורמות מובייל. בנוסף אני מתכנן ומפעיל תשתיות הסקה מקומיות ובלתי תלויות בענן עבור אחזור מידע, קריאות לכלים ותהליכי עבודה של סוכנים.",
     paragraph3:
-      "כיום א× י עובד מרחוק כ-Full Stack JavaScript Developer ב-nmi.com ומייסד את innodigi.net. א× י מפעיל מעבדת AI אישית המבוססת על GPU, שבה א× י מת× סה באופטימיזציה של הסקה, בצי× ורות RAG ובמערכות סוכ× ים חכמות.",
+      "כיום אני עובד מרחוק כ-Full Stack JavaScript Developer ב-nmi.com ומייסד את innodigi.net. אני מפעיל מעבדת AI אישית המבוססת על GPU, שבה אני מתנסה באופטימיזציה של הסקה, בצינורות RAG ובמערכות סוכנים חכמות.",
     stats: {
       years: "Senior",
-      yearsDesc: "מה× דס Full-Stack",
+      yearsDesc: "מהנדס Full-Stack",
       fullstack: "Full-Stack",
-      fullstackDesc: "ה× דסת מוצר",
+      fullstackDesc: "הנדסת מוצר",
       aiLab: "מבוסס GPU",
       aiLabDesc: "מעבדת AI",
       remote: "מרחוק",
-      remoteDesc: "צוותים בי× לאומיים",
+      remoteDesc: "צוותים בינלאומיים",
     },
   },
   expertise: {
     ...en.expertise,
     title: "יכולות",
     subtitle:
-      "מארכיטקטורת מוצר ועד תשתיות הסקה â€” המערכות שא× י בו× ה והבעיות שא× י פותר.",
+      "מארכיטקטורת מוצר ועד תשתיות הסקה — המערכות שאני בונה והבעיות שאני פותר.",
     cards: en.expertise.cards.map((c, i) => ({
       ...c,
       title: [
-        "ה× דסת מוצר Full-Stack",
-        "הסקת AI ומערכות סוכ× ים",
+        "הנדסת מוצר Full-Stack",
+        "הסקת AI ומערכות סוכנים",
         "RAG ומערכות ידע",
         "כלי פיתוח ותשתיות",
         "יישומי מובייל",
         "תשתיות AI יצירתיות",
       ][i],
       description: [
-        "מוצרי ווב מלאים משכבת ה× תו× ים ועד לממשק בפרודקשן, באמצעות TypeScript, React, Next.js, Node.js, NestJS, Laravel, GraphQL ו-REST.",
-        "תשתיות הסקה בלתי תלויות במודל, מסגרות לקריאות לכלים, תהליכי עבודה של סוכ× ים עם לולאות אימות ופריסה מקומית המותאמת ל-GPU.",
-        "צי× ורות RAG, מסדי × תו× ים וקטוריים, עיבוד מסמכים, שילוב חיפוש ברשת ותשובות AI המבוססות על מקורות.",
-        "כלי פיתוח, תזמור Docker, צי× ורות CI/CD, × יהול משאבים מודע ל-GPU ותשתיות שרתים לעומסי AI.",
-        "מוצרי מובייל חוצי פלטפורמות עם React Native ו-Expo, ארכיטקטורות מבוססות API, אימות ותכו× ות בזמן אמת.",
-        "תהליכי עבודה מתוזמרים ליצירת תמו× ות, וידאו, אודיו וקריי× ות, עם תזמור שירותים מבוסס Docker ותכ× ון מודולרי.",
+        "מוצרי ווב מלאים משכבת הנתונים ועד לממשק בפרודקשן, באמצעות TypeScript, React, Next.js, Node.js, NestJS, Laravel, GraphQL ו-REST.",
+        "תשתיות הסקה בלתי תלויות במודל, מסגרות לקריאות לכלים, תהליכי עבודה של סוכנים עם לולאות אימות ופריסה מקומית המותאמת ל-GPU.",
+        "צינורות RAG, מסדי נתונים וקטוריים, עיבוד מסמכים, שילוב חיפוש ברשת ותשובות AI המבוססות על מקורות.",
+        "כלי פיתוח, תזמור Docker, צינורות CI/CD, ניהול משאבים מודע ל-GPU ותשתיות שרתים לעומסי AI.",
+        "מוצרי מובייל חוצי פלטפורמות עם React Native ו-Expo, ארכיטקטורות מבוססות API, אימות ותכונות בזמן אמת.",
+        "תהליכי עבודה מתוזמרים ליצירת תמונות, וידאו, אודיו וקריינות, עם תזמור שירותים מבוסס Docker ותכנון מודולרי.",
       ][i],
       tags: [
         [
@@ -1944,7 +1976,7 @@ export const he: TranslationContent = {
         [
           "ממשקי הסקה",
           "קריאות לכלים",
-          "לולאות סוכ× ים",
+          "לולאות סוכנים",
           "אופטימיזציית GPU",
         ],
         [
@@ -1953,12 +1985,12 @@ export const he: TranslationContent = {
           "חיפוש ברשת",
           "תשובות מבוססות מקור",
         ],
-        ["Docker", "CI/CD", "תזמור GPU", "× יהול שרתים"],
+        ["Docker", "CI/CD", "תזמור GPU", "ניהול שרתים"],
         ["React Native", "Expo", "TypeScript", "מבוסס API"],
         [
-          "צי× ורות מדיה",
+          "צינורות מדיה",
           "תזמור שירותים",
-          "תכ× ון מודולרי",
+          "תכנון מודולרי",
         ],
       ][i],
     })),
@@ -1967,9 +1999,9 @@ export const he: TranslationContent = {
     ...en.aiSystems,
     title: "מערכות AI",
     subtitle:
-      "א× י מתכ× ן בי× ה מלאכותית לא רק כשכבת צ'אט, אלא כמ× ג× ון קבלת החלטות וייצור המשולב במוצר עצמו.",
+      "אני מתכנן בינה מלאכותית לא רק כשכבת צ'אט, אלא כמנגנון קבלת החלטות וייצור המשולב במוצר עצמו.",
     pipeline: {
-      data: "× תו× ים",
+      data: "נתונים",
       retrieval: "אחזור",
       reasoning: "הסקה",
       tools: "כלים",
@@ -1981,22 +2013,22 @@ export const he: TranslationContent = {
       title: [
         "תשתיות הסקה",
         "יצירה מבוססת אחזור",
-        "קריאות לכלים ותהליכי סוכ× ים",
-        "הערכה ו× יטור",
+        "קריאות לכלים ותהליכי סוכנים",
+        "הערכה וניטור",
       ][i],
       description: [
-        "מערכות הסקה מקומיות ובלתי תלויות בע× ן, עם מקביליות ט× זורים על פ× י כמה מעבדי GPU, טעי× ת מודלים אופטימלית וממשקי API סט× דרטיים המאפשרים להחליף ספקים ללא שי× ויי קוד.",
-        "צי× ורות RAG המחברים יישומים למאגרי הידע שלהם, עם הטמעות וקטוריות, אסטרטגיות לחלוקת מסמכים, חיפוש היברידי ותשובות המעוג× ות במקורות מאומתים.",
-        "מערכות AI שיכולות לקרוא לכלים, להפעיל פו× קציות, לחפש ברשת ולפתור משימות מרובות שלבים, עם לולאות אימות שבודקות את התוצאות לפ× י הצגתן למשתמש.",
-        "מדדים, מעקב ומסגרות הערכה למערכות AI. הב× ת זמ× י תגובה, דיוק, עלות וסחיפה â€” כי מערכת שאי אפשר למדוד היא מערכת שאי אפשר לסמוך עליה.",
+        "מערכות הסקה מקומיות ובלתי תלויות בענן, עם מקביליות טנזורים על פני כמה מעבדי GPU, טעינת מודלים אופטימלית וממשקי API סטנדרטיים המאפשרים להחליף ספקים ללא שינויי קוד.",
+        "צינורות RAG המחברים יישומים למאגרי הידע שלהם, עם הטמעות וקטוריות, אסטרטגיות לחלוקת מסמכים, חיפוש היברידי ותשובות המעוגנות במקורות מאומתים.",
+        "מערכות AI שיכולות לקרוא לכלים, להפעיל פונקציות, לחפש ברשת ולפתור משימות מרובות שלבים, עם לולאות אימות שבודקות את התוצאות לפני הצגתן למשתמש.",
+        "מדדים, מעקב ומסגרות הערכה למערכות AI. הבנת זמני תגובה, דיוק, עלות וסחיפה — כי מערכת שאי אפשר למדוד היא מערכת שאי אפשר לסמוך עליה.",
       ][i],
     })),
   },
   work: {
     ...en.work,
-    title: "פרויקטים × בחרים",
+    title: "פרויקטים נבחרים",
     subtitle:
-      "מוצרים, מערכות ותשתיות â€” מהרעיון ועד לפרודקשן.",
+      "מוצרים, מערכות ותשתיות — מהרעיון ועד לפרודקשן.",
     projects: en.work.projects.map((p, i) => ({
       ...p,
       title: [
@@ -2016,36 +2048,48 @@ export const he: TranslationContent = {
         "מעבדה אישית",
       ][i],
       problem: [
-        "לקוחות זקוקים ליישומי ווב אמי× ים ו× ית× ים להרחבה, שעובדים בכל מכשיר ומשרתים צרכים עסקיים אמיתיים â€” לא רק הדגמות.",
-        "הפעלת הסקה מקומית דורשת תיאום מדויק בין שכבות החומרה, התוכ× ה והרשת â€” בעוד שרוב המדריכים × עצרים ב'שלום עולם'.",
-        "מערכות AI צריכות לע× ות ממקורות מאומתים, לא לייצר טקסט ש× שמע משכ× ע. עיגון בידע הוא ההבדל בין צעצוע לכלי.",
-        "תהליכי AI יצירתיים כוללים תמו× ות, וידאו, אודיו וקריי× ות â€” ולכל תחום כלים, פורמטים ודרישות משאבים משלו.",
-        "משתמשים זקוקים לחוויות מובייל אמי× ות עם תכו× ות בזמן אמת, אימות ואי× טראקציה חברתית, המבוססות על כלים מודר× יים.",
-        "צוותי ה× דסה זקוקים לכלים שמפחיתים חיכוך â€” מסביבות פיתוח מקומיות ועד בדיקות אוטומטיות וצי× ורות פריסה.",
+        "לקוחות זקוקים ליישומי ווב אמינים וניתנים להרחבה, שעובדים בכל מכשיר ומשרתים צרכים עסקיים אמיתיים — לא רק הדגמות.",
+        "הפעלת הסקה מקומית דורשת תיאום מדויק בין שכבות החומרה, התוכנה והרשת — בעוד שרוב המדריכים נעצרים ב'שלום עולם'.",
+        "מערכות AI צריכות לענות ממקורות מאומתים, לא לייצר טקסט שנשמע משכנע. עיגון בידע הוא ההבדל בין צעצוע לכלי.",
+        "תהליכי AI יצירתיים כוללים תמונות, וידאו, אודיו וקריינות — ולכל תחום כלים, פורמטים ודרישות משאבים משלו.",
+        "משתמשים זקוקים לחוויות מובייל אמינות עם תכונות בזמן אמת, אימות ואינטראקציה חברתית, המבוססות על כלים מודרניים.",
+        "צוותי הנדסה זקוקים לכלים שמפחיתים חיכוך — מסביבות פיתוח מקומיות ועד בדיקות אוטומטיות וצינורות פריסה.",
       ][i],
       solution: [
-        "ב× ייתי מוצרי ווב מלאים עם ממשקי React ו-TypeScript, שרתי Node.js ו-Laravel, ממשקי GraphQL ו-REST, מסדי PostgreSQL, מערכות אימות וממשקים מבוססי × תו× ים.",
-        "ב× ייתי שרת הסקה כפול-GPU עם ממשקי API סט× דרטיים, × יתוב בלתי תלוי במודל, × יהול משאבים ותזמור שירותים מבוסס Docker. היישומים מתחברים אליו בצורה אחידה, מקומית או בע× ן.",
-        "תכ× × תי צי× ורות RAG עם מסדי × תו× ים וקטוריים, עיבוד מסמכים, חיפוש ברשת ואסטרטגיות אחזור היברידיות, כך שהיישומים מפיקים תשובות מבוססות מקורות.",
-        "תזמרתי סטודיו AI יצירתי מקומי עם תהליכי עבודה בסג× ון ComfyUI, × יהול שירותי Docker, תיאום משאבי GPU ותכ× ון מודולרי â€” על שרת GPU יחיד.",
+        "בנייתי מוצרי ווב מלאים עם ממשקי React ו-TypeScript, שרתי Node.js ו-Laravel, ממשקי GraphQL ו-REST, מסדי PostgreSQL, מערכות אימות וממשקים מבוססי נתונים.",
+        "בנייתי שרת הסקה כפול-GPU עם ממשקי API סטנדרטיים, ניתוב בלתי תלוי במודל, ניהול משאבים ותזמור שירותים מבוסס Docker. היישומים מתחברים אליו בצורה אחידה, מקומית או בענן.",
+        "תכננתי צינורות RAG עם מסדי נתונים וקטוריים, עיבוד מסמכים, חיפוש ברשת ואסטרטגיות אחזור היברידיות, כך שהיישומים מפיקים תשובות מבוססות מקורות.",
+        "תזמרתי סטודיו AI יצירתי מקומי עם תהליכי עבודה בסגנון ComfyUI, ניהול שירותי Docker, תיאום משאבי GPU ותכנון מודולרי — על שרת GPU יחיד.",
         "פיתחתי יישומי מובייל חוצי פלטפורמות עם React Native ו-Expo, מגובים ב-GraphQL, PostgreSQL, מערכות אימות והודעות בזמן אמת.",
-        "ב× ייתי כלי פיתוח הכוללים עוזרי קוד מקומיים מבוססי AI, לולאות ה× דסיות אוטומטיות, תכ× ון CI/CD ותהליכי תשתית כקוד.",
+        "בנייתי כלי פיתוח הכוללים עוזרי קוד מקומיים מבוססי AI, לולאות הנדסיות אוטומטיות, תכנון CI/CD ותהליכי תשתית כקוד.",
+      ][i],
+      technologies: [
+        "React · TypeScript · Node.js · Laravel · GraphQL · PostgreSQL",
+        "CUDA · Docker · GPU Orchestration · Inference APIs · Model Routing",
+        "Vector Databases · Document Processing · Web Search · Hybrid Retrieval",
+        "ComfyUI · Docker · GPU Orchestration · Media Pipelines",
+        "React Native · Expo · GraphQL · Apollo · TypeScript",
+        "TypeScript · Docker · CI/CD · AI-Assisted Development",
       ][i],
       result: [
-        "יישומי ווב ברמת פרודקשן, עם ארכיטקטורה × ית× ת להרחבה ובסיס קוד בר-תחזוקה.",
-        "תשתית הסקה מקומית מוכ× ה לפרודקשן, התומכת במודלים מרובים ובעומסי עבודה מקבילים.",
-        "יישומי AI מבוססי ידע, עם ייחוס למקורות ותוצרים ה× ית× ים לאימות.",
-        "סטודיו יצירתי מקומי ומאוחד לתהליכי AI רב-מודאליים, ללא תלות בע× ן.",
-        "יישומי מובייל ברמת פרודקשן עם תכו× ות בזמן אמת ועקביות בין פלטפורמות.",
+        "יישומי ווב ברמת פרודקשן, עם ארכיטקטורה ניתנת להרחבה ובסיס קוד בר-תחזוקה.",
+        "תשתית הסקה מקומית מוכנה לפרודקשן, התומכת במודלים מרובים ובעומסי עבודה מקבילים.",
+        "יישומי AI מבוססי ידע, עם ייחוס למקורות ותוצרים הניתנים לאימות.",
+        "סטודיו יצירתי מקומי ומאוחד לתהליכי AI רב-מודאליים, ללא תלות בענן.",
+        "יישומי מובייל ברמת פרודקשן עם תכונות בזמן אמת ועקביות בין פלטפורמות.",
         "כלי פיתוח שמפחיתים חיכוך ומאיצים את הדרך מרעיון לפריסה.",
       ][i],
     })),
     viewDetails: "לפרטים",
     closeDetails: "סגירה",
+    problemLabel: "בעיה",
+    solutionLabel: "פתרון",
+    techLabel: "טכנולוגיות",
+    resultLabel: "תוצאה",
   },
   experience: {
     ...en.experience,
-    title: "× יסיון",
+    title: "ניסיון",
     roles: en.experience.roles.map((r, i) => ({
       ...r,
       period: i < 2 ? "היום" : i === 5 ? "2015â€“2020" : "בעבר",
@@ -2055,52 +2099,52 @@ export const he: TranslationContent = {
         "מפתח JavaScript",
         "מפתח Frontend",
         "מפתח במשרה חלקית",
-        "מפתח תוכ× ה",
+        "מפתח תוכנה",
       ][i],
       description: [
-        "ה× דסת Full-Stack מרחוק עם JavaScript ו-TypeScript, פיתוח מוצרים, תכ× ון API וארכיטקטורת מערכות.",
-        "הקמה ו× יהול של סטודיו למוצרים דיגיטליים, עם פיתוח Full-Stack, מערכות AI וה× דסת מוצר.",
-        "פיתוח JavaScript ליישומי ווב, כולל ה× דסת Frontend ו-Backend.",
-        "ה× דסת Frontend עם פריימוורקים מודר× יים, ארכיטקטורת רכיבים וממשקי משתמש.",
-        "פיתוח עצמאי בתחומי הווב, המובייל וה-AI, עם מגוון רחב של טכ× ולוגיות.",
-        "התחלתי לב× ות יישומי ווב ומוצרים דיגיטליים במסגרת עבודה מקצועית ופרויקטים עצמאיים.",
+        "הנדסת Full-Stack מרחוק עם JavaScript ו-TypeScript, פיתוח מוצרים, תכנון API וארכיטקטורת מערכות.",
+        "הקמה וניהול של סטודיו למוצרים דיגיטליים, עם פיתוח Full-Stack, מערכות AI והנדסת מוצר.",
+        "פיתוח JavaScript ליישומי ווב, כולל הנדסת Frontend ו-Backend.",
+        "הנדסת Frontend עם פריימוורקים מודרניים, ארכיטקטורת רכיבים וממשקי משתמש.",
+        "פיתוח עצמאי בתחומי הווב, המובייל וה-AI, עם מגוון רחב של טכנולוגיות.",
+        "התחלתי לבנות יישומי ווב ומוצרים דיגיטליים במסגרת עבודה מקצועית ופרויקטים עצמאיים.",
       ][i],
     })),
   },
   principles: {
     ...en.principles,
-    title: "עקרו× ות ה× דסיים",
+    title: "עקרונות הנדסיים",
     items: en.principles.items.map((x, i) => ({
       ...x,
       text: [
-        "לב× ות מערכות ש× יתן לאמת",
-        "להפוך את המורכבות ל× צפית",
-        "לתכ× ן את הלולאה, לא רק את הפרומפט",
-        "לשמור על ממשקים פשוטים ותשתיות כ× ות",
-        "להפוך × יסויים למערכות לשימוש חוזר",
-        "לספק תוכ× ה שעובדת",
+        "לבנות מערכות שניתן לאמת",
+        "להפוך את המורכבות לנצפית",
+        "לתכנן את הלולאה, לא רק את הפרומפט",
+        "לשמור על ממשקים פשוטים ותשתיות כנות",
+        "להפוך ניסויים למערכות לשימוש חוזר",
+        "לספק תוכנה שעובדת",
       ][i],
     })),
   },
   contact: {
     ...en.contact,
-    title: "בואו × ב× ה משהו יחד",
+    title: "בואו נבנה משהו יחד",
     subtitle:
-      "א× י משתף פעולה בב× יית מוצרי Full-Stack, מערכות AI ואתגרים ה× דסיים שדורשים חשיבה טכ× ית עמוקה. אם הפרויקט שלכם זקוק למישהו שמביא תוצאות, דברו איתי.",
+      "אני משתף פעולה בבניית מוצרי Full-Stack, מערכות AI ואתגרים הנדסיים שדורשים חשיבה טכנית עמוקה. אם הפרויקט שלכם זקוק למישהו שמביא תוצאות, דברו איתי.",
     email: "יצירת קשר",
     emailPlaceholder: "akmanserkan65@gmail.com",
   },
   footer: {
     ...en.footer,
     tagline:
-      "ה× דסת Full-Stack Â· מערכות AI Â· תשתיות הסקה",
-    built: "× ב× ה על ידי innodigi.",
+      "הנדסת Full-Stack Â· מערכות AI Â· תשתיות הסקה",
+    built: "נבנה על ידי innodigi.",
     copyright: "© {year} Serkan Akman. כל הזכויות שמורות.",
   },
   languageSwitcher: {
-    en: "א× גלית",
+    en: "אנגלית",
     tr: "טורקית",
-    de: "גרמ× ית",
+    de: "גרמנית",
     sr: "סרבית",
     fr: "צרפתית",
     it: "איטלקית",

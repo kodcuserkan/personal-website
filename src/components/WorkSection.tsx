@@ -105,19 +105,19 @@ function ProjectModal({
         </div>
         <div className="space-y-5">
           <div>
-            <h4 className="text-sm font-semibold text-white/70 mb-2">Problem</h4>
+            <h4 className="text-sm font-semibold text-white/70 mb-2">{t.work.problemLabel}</h4>
             <p className="text-sm text-white/50 leading-relaxed">{project.problem}</p>
           </div>
           <div>
-            <h4 className="text-sm font-semibold text-white/70 mb-2">Solution</h4>
+            <h4 className="text-sm font-semibold text-white/70 mb-2">{t.work.solutionLabel}</h4>
             <p className="text-sm text-white/50 leading-relaxed">{project.solution}</p>
           </div>
           <div>
-            <h4 className="text-sm font-semibold text-white/70 mb-2">Technologies</h4>
+            <h4 className="text-sm font-semibold text-white/70 mb-2">{t.work.techLabel}</h4>
             <p className="text-sm text-cyan-400/70 font-mono">{project.technologies}</p>
           </div>
           <div>
-            <h4 className="text-sm font-semibold text-white/70 mb-2">Result</h4>
+            <h4 className="text-sm font-semibold text-white/70 mb-2">{t.work.resultLabel}</h4>
             <p className="text-sm text-white/50 leading-relaxed">{project.result}</p>
           </div>
         </div>
