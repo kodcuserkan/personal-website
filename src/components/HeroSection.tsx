@@ -1,4 +1,4 @@
-import heroImage from '../assets/IMG_1527_rotated.JPG';
+import heroImage from '../assets/serkan-akman.jpg';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 
