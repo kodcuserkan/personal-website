@@ -31,29 +31,26 @@ function detectBrowserLanguage(): Language {
   return 'en';
 }
 
-const LANG_PATTERN = '(en|tr|de|sr|fr|it|ar|he)';
+const HASH_LANG_RE = /^#\/(en|tr|de|sr|fr|it|ar|he)$/;
 
-function readLangFromUrl(): Language | null {
-  const path = window.location.pathname;
-  const match = path.match(new RegExp('^\\/' + LANG_PATTERN + '(\\/.*)?$'));
+function readLangFromHash(): Language | null {
+  const hash = window.location.hash;
+  const match = hash.match(HASH_LANG_RE);
   if (match) return match[1] as Language;
-  // Also handle stacked codes
-  const stacked = path.match(new RegExp('^\\/' + LANG_PATTERN + '(?:\\/' + LANG_PATTERN + ')+'));
-  if (stacked) return stacked[1] as Language;
   return null;
 }
 
-function writeLangToUrl(lang: Language) {
-  const url = new URL(window.location.href);
-  const langPattern = new RegExp('/(' + LANG_PATTERN + ')+', 'g');
-  let rest = url.pathname.replace(langPattern, '').replace(/^\/+/, '').replace(/\/+$/, '');
-  if (!rest) rest = '';
+function writeLangToHash(lang: Language) {
   if (lang === 'en') {
-    url.pathname = '/' + rest;
+    if (window.location.hash) {
+      history.pushState(null, '', window.location.pathname + window.location.search);
+    }
   } else {
-    url.pathname = '/' + lang + (rest ? '/' + rest : '');
+    const newHash = '#' + lang;
+    if (window.location.hash !== newHash) {
+      history.pushState(null, '', window.location.pathname + window.location.search + newHash);
+    }
   }
-  history.pushState({ lang }, '', url.toString());
 }
 
 interface LanguageContextType {
@@ -67,8 +64,8 @@ const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Language>(() => {
-    const urlLang = readLangFromUrl();
-    if (urlLang) return urlLang;
+    const hashLang = readLangFromHash();
+    if (hashLang) return hashLang;
     const stored = localStorage.getItem('portfolio-lang');
     if (stored && LANGUAGES.some((l) => l.code === stored)) return stored as Language;
     return detectBrowserLanguage();
@@ -82,16 +79,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem('portfolio-lang', lang);
     document.documentElement.lang = lang;
     document.documentElement.dir = isRtl(lang) ? 'rtl' : 'ltr';
-    writeLangToUrl(lang);
+    writeLangToHash(lang);
   }, [lang]);
 
   useEffect(() => {
     const handler = () => {
-      const urlLang = readLangFromUrl();
-      if (urlLang) setLangState(urlLang);
+      const hashLang = readLangFromHash();
+      if (hashLang) setLangState(hashLang);
     };
-    window.addEventListener('popstate', handler);
-    return () => window.removeEventListener('popstate', handler);
+    window.addEventListener('hashchange', handler);
+    return () => window.removeEventListener('hashchange', handler);
   }, []);
 
   const t = translations[lang] as TranslationContent;
