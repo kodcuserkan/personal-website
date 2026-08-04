@@ -316,8 +316,7 @@ export const en = {
           "Creative AI workflows span image, video, audio, and narration — each with its own tools, formats, and resource requirements.",
         solution:
           "Orchestrated a local creative AI studio with ComfyUI-style workflows, Docker service management, GPU resource coordination, and modular pipeline design. Everything runs on a single GPU server.",
-        technologies:
-          "ComfyUI · Docker · GPU Orchestration · Media Pipelines",
+        technologies: "ComfyUI · Docker · GPU Orchestration · Media Pipelines",
         result:
           "A unified local creative studio for multi-modal AI workflows without cloud dependencies.",
       },
@@ -339,8 +338,7 @@ export const en = {
           "Engineering teams need tools that reduce friction — from local development environments to automated testing and deployment pipelines.",
         solution:
           "Built developer tooling including local AI-powered coding assistants, automated engineering loops, CI/CD pipeline design, and infrastructure-as-code workflows.",
-        technologies:
-          "TypeScript · Docker · CI/CD · AI-Assisted Development",
+        technologies: "TypeScript · Docker · CI/CD · AI-Assisted Development",
         result:
           "Developer tools that reduce friction and accelerate the path from idea to deployment.",
       },
@@ -454,7 +452,7 @@ export const tr = {
     headline:
       "Yazılımın, verinin ve altyapının kesiştiği noktada dijital ürünler ve akıllı sistemler geliştiriyorum.",
     subtitle:
-      "Kıdemli full-stack mühendisi ve AI sistemleri geliştiricisiyim. Fikirleri çalışan ürünlere, karmaşık altyapıları ise güvenilir deneyimlere dönüştürüyorum. Uzaktan çalışıyorum.",
+      "Kıdemli full-stack mühendisi ve AI sistemleri geliştiricisiyim. Fikirleri çalışan ürünlere, karmaşık altyapıları ise güvenilir deneyimlere dönüştürüyorum. Remote çalışıyorum.",
     ctaPrimary: "Projeleri İncele",
     ctaSecondary: "İletişime Geç",
     statusLabel: "İş birliklerine açığım",
@@ -472,15 +470,15 @@ export const tr = {
     paragraph2:
       "Ürünleri uçtan uca geliştiririm: veri modellerinden ve API tasarımından, kullanıcıların her gün etkileşim kurduğu arayüzlere kadar. TypeScript, React, Node.js, Laravel ve mobil platformlarla çalışıyor; bilgi erişimi, araç kullanımı ve akıllı iş akışları için yerel ve buluttan bağımsız AI çıkarım altyapıları tasarlıyorum.",
     paragraph3:
-      "Şu anda nmi.com'de uzaktan Full Stack JavaScript Developer olarak çalışıyor, aynı zamanda innodigi.net'i yönetiyorum. Kişisel GPU destekli AI laboratuvarımda çıkarım optimizasyonu, RAG pipeline'ları ve akıllı agent sistemleri üzerine çalışıyorum.",
+      "Şu anda nmi.com'da remote Full Stack JavaScript Developer olarak çalışıyor, aynı zamanda innodigi.net'i yönetiyorum. Kişisel GPU destekli AI laboratuvarımda çıkarım optimizasyonu, RAG pipeline'ları ve akıllı agent sistemleri üzerine çalışıyorum.",
     stats: {
       years: "Senior",
-      yearsDesc: "Full-Stack Mühendis",
+      yearsDesc: "Full-Stack Developer",
       fullstack: "Full-Stack",
-      fullstackDesc: "Ürün Mühendisliği",
-      aiLab: "GPU Destekli",
+      fullstackDesc: "Ürün Geliştirme",
+      aiLab: "GPU Powered",
       aiLabDesc: "AI Laboratuvarı",
-      remote: "Uzaktan",
+      remote: "Remote",
       remoteDesc: "Uluslararası Takımlar",
     },
   },
@@ -531,7 +529,7 @@ export const tr = {
       {
         title: "Geliştirici Araçları ve Altyapı",
         description:
-          "Geliştirici araçları, Docker orkestrasyonu, CI/CD pipeline'ları, GPU-farkındalık kaynak yönetimi ve AI iş yükleri için uzaktan sunucu altyapısı.",
+          "Geliştirici araçları, Docker orkestrasyonu, CI/CD pipeline'ları, GPU-farkındalık kaynak yönetimi ve AI iş yükleri için remote sunucu altyapısı.",
         tags: ["Docker", "CI/CD", "GPU Orkestrasyonu", "Sunucu Yönetimi"],
         icon: "terminal",
       },
@@ -660,8 +658,7 @@ export const tr = {
           "Mühendislik ekipleri, yerel geliştirme ortamlarından otomatik test ve dağıtım pipeline'larına kadar, üretim sürecindeki sürtünmeyi azaltan araçlara ihtiyaç duyar.",
         solution:
           "Yerel AI destekli kodlama asistanları, otomatik mühendislik döngüleri, CI/CD pipeline tasarımları ve altyapı kodu iş akışları içeren geliştirici araçları geliştirdim.",
-        technologies:
-          "TypeScript · Docker · CI/CD · AI Destekli Geliştirme",
+        technologies: "TypeScript · Docker · CI/CD · AI Destekli Geliştirme",
         result:
           "Sürtünmeyi azaltan ve fikirden dağıtıma giden yolu hızlandıran geliştirici araçları.",
       },
@@ -681,7 +678,7 @@ export const tr = {
         role: "Full Stack JavaScript Developer",
         period: "Günümüz",
         description:
-          "JavaScript ve TypeScript ile uzaktan full-stack mühendislik. Ürün geliştirme, API tasarımı ve sistem mimarisi.",
+          "JavaScript ve TypeScript ile remote full-stack mühendislik. Ürün geliştirme, API tasarımı ve sistem mimarisi.",
       },
       {
         company: "innodigi.net",
@@ -747,8 +744,7 @@ export const tr = {
   },
   footer: {
     name: "Serkan Akman",
-    tagline:
-      "Full-Stack Mühendislik · AI Sistemleri · Çıkarım Altyapısı",
+    tagline: "Full-Stack Mühendislik · AI Sistemleri · Çıkarım Altyapısı",
     built: "innodigi tarafından geliştirildi.",
     copyright: "© {year} Serkan Akman. Tüm hakları saklıdır.",
     linkedin: "LinkedIn",
@@ -986,8 +982,7 @@ export const de: TranslationContent = {
           "Engineering-Teams brauchen Werkzeuge, die Reibung reduzieren — von lokalen Entwicklungsumgebungen bis zu automatisierten Test- und Deployment-Pipelines.",
         solution:
           "Ich habe Entwicklertools entwickelt, darunter lokale KI-gestützte Coding-Assistenten, automatisierte Engineering-Loops, CI/CD-Pipelines und Infrastructure-as-Code-Workflows.",
-        technologies:
-          "TypeScript · Docker · CI/CD · KI-gestützte Entwicklung",
+        technologies: "TypeScript · Docker · CI/CD · KI-gestützte Entwicklung",
         result:
           "Werkzeuge, die Reibung reduzieren und den Weg von der Idee bis zum Deployment beschleunigen.",
       },
@@ -1720,12 +1715,7 @@ export const ar: TranslationContent = {
           "Laravel",
           "GraphQL",
         ],
-        [
-          "واجهات الاستدلال",
-          "استدعاء الأدوات",
-          "حلقات الوكلاء",
-          "تحسين GPU",
-        ],
+        ["واجهات الاستدلال", "استدعاء الأدوات", "حلقات الوكلاء", "تحسين GPU"],
         [
           "مخازن المتجهات",
           "معالجة المستندات",
@@ -1734,11 +1724,7 @@ export const ar: TranslationContent = {
         ],
         ["Docker", "CI/CD", "تنسيق GPU", "إدارة الخوادم"],
         ["React Native", "Expo", "TypeScript", "مدفوع بـ API"],
-        [
-          "خطوط الوسائط",
-          "تنسيق الخدمات",
-          "تصميم معياري",
-        ],
+        ["خطوط الوسائط", "تنسيق الخدمات", "تصميم معياري"],
       ][i],
     })),
   },
@@ -1774,8 +1760,7 @@ export const ar: TranslationContent = {
   work: {
     ...en.work,
     title: "مشاريع مختارة",
-    subtitle:
-      "منتجات وأنظمة وبنى تحتية — من الفكرة إلى الإنتاج.",
+    subtitle: "منتجات وأنظمة وبنى تحتية — من الفكرة إلى الإنتاج.",
     projects: en.work.projects.map((p, i) => ({
       ...p,
       title: [
@@ -1831,8 +1816,7 @@ export const ar: TranslationContent = {
     title: "الخبرة",
     roles: en.experience.roles.map((r, i) => ({
       ...r,
-      period:
-        i < 2 ? "حتى الآن" : i === 5 ? "2015–2020" : "سابقاً",
+      period: i < 2 ? "حتى الآن" : i === 5 ? "2015–2020" : "سابقاً",
       role: [
         "مطور JavaScript Full-Stack",
         "المؤسس",
@@ -1973,25 +1957,11 @@ export const he: TranslationContent = {
           "Laravel",
           "GraphQL",
         ],
-        [
-          "ממשקי הסקה",
-          "קריאות לכלים",
-          "לולאות סוכנים",
-          "אופטימיזציית GPU",
-        ],
-        [
-          "מאגרי וקטורים",
-          "עיבוד מסמכים",
-          "חיפוש ברשת",
-          "תשובות מבוססות מקור",
-        ],
+        ["ממשקי הסקה", "קריאות לכלים", "לולאות סוכנים", "אופטימיזציית GPU"],
+        ["מאגרי וקטורים", "עיבוד מסמכים", "חיפוש ברשת", "תשובות מבוססות מקור"],
         ["Docker", "CI/CD", "תזמור GPU", "ניהול שרתים"],
         ["React Native", "Expo", "TypeScript", "מבוסס API"],
-        [
-          "צינורות מדיה",
-          "תזמור שירותים",
-          "תכנון מודולרי",
-        ],
+        ["צינורות מדיה", "תזמור שירותים", "תכנון מודולרי"],
       ][i],
     })),
   },
@@ -2027,8 +1997,7 @@ export const he: TranslationContent = {
   work: {
     ...en.work,
     title: "פרויקטים נבחרים",
-    subtitle:
-      "מוצרים, מערכות ותשתיות — מהרעיון ועד לפרודקשן.",
+    subtitle: "מוצרים, מערכות ותשתיות — מהרעיון ועד לפרודקשן.",
     projects: en.work.projects.map((p, i) => ({
       ...p,
       title: [
@@ -2136,8 +2105,7 @@ export const he: TranslationContent = {
   },
   footer: {
     ...en.footer,
-    tagline:
-      "הנדסת Full-Stack Â· מערכות AI Â· תשתיות הסקה",
+    tagline: "הנדסת Full-Stack Â· מערכות AI Â· תשתיות הסקה",
     built: "נבנה על ידי innodigi.",
     copyright: "© {year} Serkan Akman. כל הזכויות שמורות.",
   },
